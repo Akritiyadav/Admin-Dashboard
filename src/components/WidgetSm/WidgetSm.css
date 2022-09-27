@@ -6,7 +6,7 @@
     margin-right: 20px;
 }
 .widgetSmTitle{
-    font-style: 32px;
+    font-style: 22px;
     font-weight: 600;
 }
 .widgetSmImg{
@@ -25,4 +25,28 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px 0px;
+}
+.widgetSmUser{
+    display: flex;
+    flex-direction: column;
+}
+.widgetSmUsername{
+    font-weight: 600;
+}
+.widgetSmUserTitle{
+    font-weight: 300;
+}
+.widgetSmbtn{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    background-color: #eeeef7;
+    color: #555;
+    cursor: pointer;
+}
+.widgetSmIcon{
+    font-size: 16px;
+    margin-right: 5px;
 }
