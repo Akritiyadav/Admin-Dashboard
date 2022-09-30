@@ -1,12 +1,30 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import "./UserList.css";
 import { DataGrid } from '@mui/x-data-grid';
+import { DeleteOutline } from "@material-ui/icons";
+import {userRows} from "../../DummyData";
+import {Link} from "react-router-dom";
 
 export default function UserList() {
+const [data, setData] = useState(userRows);
+
+const handleDalete = (id)=>{
+  setData(data.filter((item)=> item.id!==id))
+}
+
   const columns = [
     { field: 'id', headerName: 'ID', width: 70 },
-    { field: 'username', headerName: 'Username', width: 130 },
-    { field: 'email', headerName: 'Email', width: 130 },
+    {
+      field: 'user', headerName: 'User', width: 200, renderCell: (params) => {
+        return (
+          <div className='userListUser'>
+            <img className='userListImg' src={params.row.avatar} alt="" />
+            {params.row.username}
+          </div>
+        )
+      }
+    },
+    { field: 'email', headerName: 'Email', width: 200 },
     {
       field: 'status',
       headerName: 'Status',
@@ -17,89 +35,31 @@ export default function UserList() {
       headerName: 'Transaction Volume',
       width: 160,
     },
+    {
+      field: "action",
+      headerName: "Action",
+      width: 150,
+      renderCell: (params) => {
+        return (
+          <>
+          <Link to={"/user/"+params.row.id}>
+            <button className="userListEdit">Edit</button>
+            </Link>
+            <DeleteOutline className="userListDelete" onClick={()=>handleDalete(params.row.id)} />
+          </>
+        )
+      }
+    },
   ];
-  
-  const rows = [
-    { id: 1, 
-      username: 'Ram ', 
-      avatar:"./image/img2.png",
-      email:"ram@.gmail.com",
-      status:"active",
-      transaction:"$120.00",
-   },
-   { id: 2, 
-    username: 'Ram  ', 
-    avatar:"./image/img2.png",
-    email:"ram@.gmail.com",
-    status:"active",
-    transaction:"$120.00",
- },
- { id: 3, 
-  username: 'Ram ', 
-  avatar:"./image/img2.png",
-  email:"ram@.gmail.com",
-  status:"active",
-  transaction:"$120.00",
-},
-{ id: 4, 
-  username: 'Ram ', 
-  avatar:"./image/img2.png",
-  email:"ram@.gmail.com",
-  status:"active",
-  transaction:"$120.00",
-},
-{ id: 5, 
-  username: 'Ram ', 
-  avatar:"./image/img2.png",
-  email:"ram@.gmail.com",
-  status:"active",
-  transaction:"$120.00",
-},
-{ id: 6, 
-  username: 'Ram ', 
-  avatar:"./image/img2.png",
-  email:"ram@.gmail.com",
-  status:"active",
-  transaction:"$120.00",
-},
-{ id: 7, 
-  username: 'Ram ', 
-  avatar:"./image/img2.png",
-  email:"ram@.gmail.com",
-  status:"active",
-  transaction:"$120.00",
-},
-{ id: 8, 
-  username: 'Ram ', 
-  avatar:"./image/img2.png",
-  email:"ram@.gmail.com",
-  status:"active",
-  transaction:"$120.00",
-},
-{ id: 9, 
-  username: 'Ram ', 
-  avatar:"./image/img2.png",
-  email:"ram@.gmail.com",
-  status:"active",
-  transaction:"$120.00",
-},
-{ id: 10, 
-  username: 'Ram ', 
-  avatar:"./image/img2.png",
-  email:"ram@.gmail.com",
-  status:"active",
-  transaction:"$120.00",
-},
 
-  ];
-  
   return (
     <div className='userList'>
-       <DataGrid
-        rows={rows}
+      <DataGrid
+        rows={data}
+        disableSelectionOnClick
         columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
+        pageSize={8}
+        // rowsPerPageOptions={[5]}
         checkboxSelection
       />
     </div>

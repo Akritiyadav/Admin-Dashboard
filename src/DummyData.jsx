@@ -49,3 +49,88 @@
         "Active User": 4000,
       },
   ];
+
+  
+  export const userRows = [
+    {
+      id: 1,
+      username: 'sita ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 2,
+      username: 'sita  ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 3,
+      username: 'sita ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 4,
+      username: 'sita ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 5,
+      username: 'sita ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 6,
+      username: 'sita ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 7,
+      username: 'sita ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 8,
+      username: 'sita ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 9,
+      username: 'sita ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+    {
+      id: 10,
+      username: 'sita ',
+      avatar: "./image/img2.png",
+      email: "sita@.gmail.com",
+      status: "active",
+      transaction: "$120.00",
+    },
+
+  ];
