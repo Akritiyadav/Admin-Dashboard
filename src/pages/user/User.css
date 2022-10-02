@@ -35,3 +35,44 @@
     box-shadow: 0px 0px 9px -1px #000000;
     margin-left: 20px;
 }
+.userShowTop{
+    display: flex;
+    align-items: center;
+}
+.userShowImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.userShowToptitle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.userShowUsername{
+     font-weight: 600;
+}
+.userShowUserTitle{
+    font-weight: 300;
+}
+.userShowBottom{
+    margin-top: 20px;
+}
+.userShowTitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(176, 169, 169);
+}
+.userShowInfo{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    color: #444;
+}
+.userShowIcon{
+    font-style: 16px !important;
+}
+.userShowInfoTitle{
+    margin-left: 10px;
+}
