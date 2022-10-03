@@ -1,6 +1,6 @@
 import React from 'react';
 import "./User.css";
-import {LocationSearching, MailOutline, PermIdentity,PhoneAndroid,CalendarToday} from "@material-ui/icons";
+import {LocationSearching, MailOutline, PermIdentity,PhoneAndroid,CalendarToday,Publish} from "@material-ui/icons";
 
 export default function User() {
   return (
@@ -43,7 +43,41 @@ export default function User() {
               </div>
             </div>
         </div>
-        <div className="userUpdate"></div>
+        <div className="userUpdate">
+          <span className="userUpdateTitle">Edit</span>
+          <form  className="userUpdateForm">
+            <div className="userUpdateLeft">
+              <div className="userUpdateItem">
+                <label>Username</label>
+                <input type="text" placeholder='atuly17' className='userUpdateInput' />
+              </div>
+              <div className="userUpdateItem">
+                <label>Fullname</label>
+                <input type="text" placeholder='Atul yadav' className='userUpdateInput' />
+              </div>
+              <div className="userUpdateItem">
+                <label>Email</label>
+                <input type="text" placeholder='atuly17@gmail.com' className='userUpdateInput' />
+              </div>
+              <div className="userUpdateItem">
+                <label>Phone</label>
+                <input type="text" placeholder='+1 123 456 68' className='userUpdateInput' />
+              </div>
+              <div className="userUpdateItem">
+                <label>Address</label>
+                <input type="text" placeholder='Delhi | India' className='userUpdateInput' />
+              </div>
+            </div>
+            <div className="userUpdateRight">
+              <div className="userUpdateUpload">
+                <img src="./image/atul.jpg" alt="" className="userUpdateImg" />
+                <label htmlFor="file"><Publish className='userUpdateIcon'/></label>
+                <input type="file" id='file' style={{display:"none"}} />
+              </div>
+              <button className="userUpdateButton">Update</button>
+            </div>
+          </form>
+        </div>
      </div>
     </div>
   );
