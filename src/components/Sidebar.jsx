@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Sidebar.css";
+import { NavLink } from 'react-router-dom';
 import { LineStyle, Timeline, TrendingUp ,PersonOutline,EmailOutlined,ChatBubbleOutlineOutlined,Report,
   Assessment,Storefront,WorkOutlineOutlined,DynamicFeedOutlined} from "@material-ui/icons";
 
@@ -27,14 +28,18 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
+          <NavLink to="/user" className="link">
             <li className="sidebarListItem ">
               <PersonOutline className='sidebarIcon' />
               Users
             </li>
+            </NavLink>
+            <NavLink to="/products" className="link">
             <li className="sidebarListItem ">
               <Storefront className='sidebarIcon' />
               Products
             </li>
+            </NavLink>
             <li className="sidebarListItem">
               <TrendingUp className='sidebarIcon' />
               Transaction

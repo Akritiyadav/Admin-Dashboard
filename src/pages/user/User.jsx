@@ -1,13 +1,16 @@
 import React from 'react';
 import "./User.css";
 import {LocationSearching, MailOutline, PermIdentity,PhoneAndroid,CalendarToday,Publish} from "@material-ui/icons";
+import { NavLink } from 'react-router-dom';
 
 export default function User() {
   return (
     <div className='user'>
     <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
+        <NavLink to="/newUser">
         <button className="userAddButton">Create</button>
+        </NavLink>
     </div>
      <div className="userContainer">
         <div className="userShow">
