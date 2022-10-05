@@ -50,6 +50,21 @@
       },
   ];
 
+  export const productData = [
+    {
+      name: 'Jan',
+      "Sales": 4000,
+    },
+    {
+        name: 'Feb',
+        "Sales": 3000,
+      },
+      {
+        name: 'Mar',
+        "Sales": 5000,
+      },
+  ];
+
   
   export const userRows = [
     {
@@ -131,6 +146,90 @@
       email: "sita@.gmail.com",
       status: "active",
       transaction: "$120.00",
+    },
+
+  ];
+
+  export const productRows = [
+    {
+      id: 1,
+      name: 'Apple Airpods',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 2,
+      name: 'Apple Airpods',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 3,
+      name: 'Apple Airpods',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 4,
+      name: 'Apple Airpods',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 5,
+      name: 'Apple Airpods',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 6,
+      name: 'Apple Airpods ',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 7,
+      name: 'Apple Airpods',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 8,
+      name: 'Apple Airpods',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 9,
+      name: 'Apple Airpods',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
+    },
+    {
+      id: 10,
+      name: 'Apple Airpods',
+      img: "./image/apple.jfif",
+      stock:123,
+      status: "active",
+      price: "$120.00",
     },
 
   ];
